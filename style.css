@@ -1,0 +1,1179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.max_width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* navbar section styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background-color: white;
+}
+
+.navbar .max_width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo span {
+    color: orange;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    height: 29px;
+    width: 120px;
+    border: 2px solid orange;
+    text-align: center;
+    border-radius: 3px;
+}
+
+/* menu-btn  styling*/
+.menu-btn {
+    color: orange;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-button {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: orange;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: color 0.3s ease;
+}
+
+.scroll-up-button.show {
+    opacity: 1;
+    bottom: 30px;
+    pointer-events: auto;
+}
+
+/* home section styling */
+
+.home {
+    display: flex;
+    background: url("./images/bannertravel.jpeg") no-repeat center;
+    color: black;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max_width {
+    margin: auto 0 auto 40px;
+    margin-top: 25px;
+}
+
+
+.home .home-content .text_1 {
+    font-size: 18px;
+    color: red;
+}
+
+.home .home-content .text_2 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -3px;
+
+}
+
+.home .home-content .text_3 {
+    font-size: 17px;
+    margin: 5px 0;
+    letter-spacing: 1px;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background: orange;
+    color: black;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid orange;
+    transition: all 0.3s ease;
+}
+
+.home .home-content .playdemo {
+    display: inline-block;
+    color: red;
+    font-size: 35px;
+    padding: 12px 36px;
+    margin-top: 20px;
+
+}
+
+.playdemo span {
+    color: black;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.home .home-content a:hover {
+    color: orange;
+    background: none;
+}
+
+/* booking section styling */
+.about-content h2 {
+    font-size: 40px;
+}
+
+.about-content p {
+    font-size: 15px;
+    padding-left: 50px;
+}
+
+.about-content h5 {
+
+    padding-left: 50px;
+}
+
+.choose {
+    margin-top: 15px;
+}
+
+.paymant {
+    margin-top: 15px;
+}
+
+.airport {
+    margin-top: 15px;
+}
+
+.choose i {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: 1px solid orange;
+    background-color: orange;
+    text-align: center;
+    font-size: 25px;
+    padding: 7px;
+    float: left;
+
+
+}
+
+.paymant i {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color: red;
+    text-align: center;
+    font-size: 25px;
+    padding: 6px;
+    float: left;
+
+}
+
+.airport i {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: 1px solid greenyellow;
+    background-color: greenyellow;
+    text-align: center;
+    font-size: 25px;
+    padding: 6px;
+    float: left;
+
+}
+
+.about .about-content .card p {
+    color: dimgray;
+    padding: 7px;
+    font-size: 13px;
+}
+
+.about .about-content .card {
+    height: 300px;
+    width: 300px;
+    border: 1px solid rgb(240, 250, 255);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 5px 10px 15px rgb(240, 250, 255);
+
+}
+
+.about .about-content .card .cardcontent {
+    margin-right: 90px;
+}
+
+.about .about-content .card .cardcontent h5 {
+    margin-left: -100px;
+}
+
+.about .about-content .card .cardcontent .people {
+    padding-left: 20px;
+}
+
+.about .about-content .card .cardcontent .travalicon2 .fav i {
+    padding-left: 230px;
+    color: rgb(59, 150, 186);
+    font-size: 25px;
+    /* padding-bottom: 60px; */
+}
+
+.travalicon2 {
+    margin-left: -5px;
+}
+
+.about .about-content .travelicons i {
+    height: 25px;
+    width: 25px;
+    border: 1px solid rgb(224, 222, 222);
+    background-color: rgb(224, 222, 222);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+
+
+}
+
+.about .about-content .travelicons {
+    margin-left: -35px;
+}
+
+.about .about-content .right {
+    width: 45%;
+}
+
+.about .about-content .right img {
+    height: 120px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.about .about-content .left {
+    width: 55%;
+}
+
+.about .about-content .left .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .left .text span {
+    color: #016A70;
+}
+
+.about .about-content .left p {
+    text-align: justify;
+}
+
+.goingcard {
+    height: 100px;
+    width: 250px;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 6px;
+    background-color: white;
+    position: absolute;
+    right: 150px;
+    top: 2150px;
+}
+
+.goingcard img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.goingcard p {
+    color: gray;
+    margin-left: 10px;
+}
+
+.goingcard h3 {
+    font-weight: 800;
+    margin-left: 60px;
+}
+
+.goingcard h5 {
+    color: rgb(244, 113, 244);
+    margin-left: 10px;
+}
+
+.goingcard h5 span {
+    color: black;
+}
+
+.line {
+    height: 5px;
+    width: 40%;
+    background: rgb(244, 113, 244);
+    margin-left: 60px;
+    margin-top: 5px;
+
+}
+
+.goingcard-contant {
+    padding: 10px;
+    margin-top: -60px;
+}
+
+
+
+/* about section styling */
+/* .about{
+    padding-top:50px;
+} */
+.about .cards2 {
+    position: absolute;
+}
+
+.about .dout {
+    color: gray;
+}
+
+.about .ceo {
+    height: 200px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid rgb(232, 230, 230, 0.7);
+    margin-top: 400px;
+
+
+}
+
+.name {
+    padding-top: 150px;
+
+}
+
+.about .ceo h4 {
+    margin-left: 5px;
+}
+
+.about .commend {
+    height: 180px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid rgb(241, 239, 239);
+    margin: -10px;
+    text-align: start;
+    position: relative;
+    bottom: 250px;
+    right: 50px;
+    box-shadow: 10px 5px 5px 10px rgb(200, 199, 199);
+    z-index: 999999;
+}
+
+.about .commend h4 {
+    padding-top: 10px;
+    margin-left: 5 px;
+    margin-top: 30px;
+
+
+}
+
+.about .commend p {
+    padding-top: 8px;
+    font-size: 10px;
+}
+
+.about .happy-content .right {
+    width: 45%;
+}
+
+.about .happy-content .right img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    top: 350px;
+    right: 100px;
+}
+
+.about .happy-content .left {
+    width: 55%;
+}
+
+/* airline section styling */
+
+.company {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-top: 10px; */
+    flex-wrap: wrap;
+
+}
+
+
+.company img {
+    height: 60px;
+    width: 200px;
+}
+
+/* Subscribe section styling */
+.subscribe {
+    padding-top: 100px;
+}
+
+.mail p {
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.email {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.email i {
+    position: relative;
+    left: 30px;
+
+}
+
+.email input {
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid gray;
+    background-color: rgb(228, 223, 223);
+    border-radius: 3px;
+    padding-left: 30px;
+}
+
+.email button {
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    background-color: orange;
+    border-color: orange;
+    border-radius: 3px;
+    color: white;
+}
+
+/* footer section styling */
+.footersection {
+
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-around;
+    text-transform: capitalize;
+    gap: 25px;
+
+}
+
+.footersection p {
+    color: darkgray;
+}
+
+.footersection h2 {
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+.footersection h5 {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.socialmedia img {
+    height: 35px;
+    width: 70px;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.socialmedia i {
+    font-size: 25px;
+    color: black;
+    padding-left: 10px;
+}
+
+.socialmedia h6 {
+    font-size: 14px;
+    color: darkgray;
+    padding-top: 10px;
+}
+
+.footersection p:hover {
+    color: black;
+}
+
+.socialmedia :hover {
+    color: darkgray;
+}
+
+.footer p {
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* all similar content code styling */
+
+
+section {
+    padding: 100px 0;
+}
+
+.about,
+.services,
+.works,
+.skills,
+.contact,
+footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content,
+.about .happy-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title1 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: dimgray;
+}
+
+section .title2 {
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+/* service section styling */
+
+
+.services {
+    color: black;
+    background: white;
+}
+
+
+
+.services .serv-content .card {
+    width: calc(25% - 10px);
+    background: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 50px;
+}
+
+.services .serv-content .card:hover {
+    background: orange;
+    color: black;
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: orange;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: black;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-family: 500;
+    margin: 10px 0 7px 0;
+    color: black;
+}
+
+.services .serv-content .card:hover .text {
+    color: black;
+}
+
+/* destination section styling */
+
+
+
+.work-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+
+.layer {
+    width: 100%;
+    height: 0%;
+    /* background: rgba(248, 248, 1, 0.7); */
+    border-radius: 6px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.layer h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+}
+
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.work .city {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.work .city span {
+    padding-left: 170px;
+}
+
+.work .trip {
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* reponsive media Query start  */
+@media (min-width:1350px) and (max-width:2560px) {
+    .goingcard {
+        display: none;
+    }
+}
+
+@media (max-width:1300px) {
+    .home .max_width {
+        margin-left: 0px;
+    }
+
+    .work .city span {
+        padding-left: 130px;
+    }
+
+
+}
+
+@media (max-width:1104px) {
+
+
+    .work .city span {
+        padding-left: 85px;
+    }
+
+    .goingcard {
+        display: none;
+    }
+}
+
+
+@media (max-width:991px) {
+    .max_width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width:947px) {
+    .max_width {
+        padding: 0 50px;
+    }
+
+    .work .city span {
+        padding-left: 140px;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0px;
+        font-size: 25px;
+        color: orange;
+    }
+
+    .home .home-content .text_2 {
+        font-size: 55px;
+    }
+
+    .home .home-content .text_3 {
+        font-size: 16px;
+    }
+
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    .home .home-content .playdemo {
+
+        font-size: 35px;
+        padding: 12px 36px;
+        margin-top: 20px;
+
+    }
+
+    .playdemo span {
+
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .about .about-content .column {
+        width: 100%;
+    }
+
+    .max_width {
+        max-width: 800px;
+    }
+
+    .about .about-content .right {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .left {
+        flex: 100%;
+
+    }
+
+    .about .about-content .card {
+        height: 300px;
+        width: 300px;
+        border: 1px solid rgb(240, 250, 255);
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 10px 1px 5px 15px rgb(240, 250, 255);
+        margin-top: 50px;
+        margin-left: -310px;
+    }
+
+    .about .about-content .right img {
+        height: 100px;
+        width: 280px;
+        border-radius: 6px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .skills .skills-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .travalicon2 {
+        margin-left: -10px;
+    }
+
+    .company {
+
+        row-gap: 25px;
+    }
+
+    .goingcard {
+        display: none;
+    }
+
+}
+
+@media (max-width:690px) {
+    .max_width {
+        padding: 0 103px;
+    }
+
+    .home {
+        background: none;
+    }
+
+    .home .home-content .text_2 {
+        font-size: 52px;
+    }
+
+    .home .home-content .text_3 {
+        font-size: 15px;
+    }
+
+    .home .home-content a {
+        font-size: 18px;
+    }
+
+    .home .home-content .playdemo {
+
+        font-size: 30px;
+        padding: 12px 30px;
+        margin-left: 10px;
+
+    }
+
+    .playdemo span {
+        color: black;
+        font-size: 20px;
+        margin-left: 1px;
+    }
+
+    .services .serv-content .card {
+        width: 100%;
+    }
+
+    .work .city span {
+        padding-left: 100px;
+    }
+
+    .about .about-content .card {
+
+        margin-left: 100px;
+    }
+    .about .happy-content .right img {
+        position: relative;
+        top: 500px;
+        right: 250px;
+        margin-left: 50px;
+    }
+
+    .about .commend {
+
+        position: relative;
+        bottom: 110px;
+        right: 200px;
+        margin-left: 50px;
+
+    }
+    .about .ceo h4 {
+        margin-left: 95px;
+    }
+    .about .ceo p {
+        margin-left: 95px;
+    }
+    .name {
+        padding-top: 290px;
+        margin-left: -240px;
+    }
+
+    .about .ceo {
+        border: none;
+    }
+
+    .about .commend {
+        width: 300px;
+    }
+
+    .company {
+
+        row-gap: 25px;
+    }
+
+    .goingcard {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+    .home {
+
+        background: none;
+
+
+    }
+
+    .home .home-content .text_2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text_3 {
+        font-size: 14px;
+    }
+
+    .home .home-content a {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .home .home-content .playdemo {
+
+        font-size: 20px;
+        margin-top: 20px;
+
+    }
+
+    .playdemo span {
+        font-size: 16px;
+        margin-left: 3px;
+    }
+
+    .work .city span {
+        padding-left: 230px;
+    }
+
+    .about .about-content .card {
+
+        margin-left: 100px;
+    }
+
+    .about .commend {
+        position: relative;
+        bottom: 110px;
+        right: 120px;
+    }
+
+    .name {
+        padding-top: 290px;
+        margin-left: -100px;
+    }
+
+    .about .happy-content .right img {
+        position: relative;
+        top: 500px;
+        right: 180px;
+    }
+
+    .about .ceo {
+        border: none;
+    }
+
+    .about .commend {
+        width: 250px;
+    }
+
+    .company {
+        row-gap: 25px;
+    }
+
+    .email button {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .goingcard {
+        display: none;
+    }
+
+    .footersection h5 {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: start;
+    }
+
+    .footersection {
+        justify-content: left;
+
+
+    }
+}
+
+@media (min-width:691px) and (max-width:764px) {
+    .work .city span {
+        padding-left: 110px;
+    }
+}
+
+@media (min-width:586px) and (max-width:630px) {
+    .work .city span {
+        padding-left: 70px;
+    }
+}
+
+@media (min-width:529px) and (max-width:585px) {
+    .work .city span {
+        padding-left: 310px;
+    }
+}
+
+
+@media (min-width:469px) and (max-width:528px) {
+    .work .city span {
+        padding-left: 250px;
+    }
+}
+
+@media (min-width:449px) and (max-width:468px) {
+    .work .city span {
+        padding-left: 230px;
+    }
+}
+
+@media (min-width:424px) and (max-width:448px) {
+    .work .city span {
+        padding-left: 205px;
+    }
+}
+
+@media (min-width:401px) and (max-width:424px) {
+    .work .city span {
+        padding-left: 182px;
+    }
+}
+
+@media (min-width:320px) and (max-width:400px) {
+    .work .city span {
+        padding-left: 162px;
+    }
+}
